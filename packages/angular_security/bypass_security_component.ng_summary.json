@@ -1,0 +1,55 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "BypassSecurityComponent"
+      }
+    ],
+    "6": "bypass_security_component.dart"
+  },
+  "type": {
+    "BypassSecurityComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "bypass-security",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "BypassSecurityComponent",
+        "moduleUrl": "asset:angular_security/lib/bypass_security_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "<h3>Bypass Security Component</h3>\n\n<h4>A untrusted URL:</h4>\n<p><a class=\"e2e-dangerous-url\" [href]=\"dangerousUrl\">Click me</a></p>\n<h4>A trusted URL:</h4>\n<p>Not currently implemented.</p>\n<!--\n<p><a class=\"e2e-trusted-url\" [href]=\"trustedUrl\">Click me</a></p>\n-->\n\n<h4>Resource URL:</h4>\n<p><label>Showing: <input (input)=\"updateVideoUrl($event.target.value)\"></label></p>\n<p>Trusted:</p>\n<p>Not currently implemented.</p>\n<!--\n<iframe class=\"e2e-iframe-trusted-src\" width=\"640\" height=\"390\" [src]=\"videoUrl\"></iframe>\n-->\n<p>Untrusted:</p>\n<iframe class=\"e2e-iframe-untrusted-src\" width=\"640\" height=\"390\" [src]=\"dangerousVideoUrl\"></iframe>\n",
+        "templateUrl": "asset:angular_security/lib/bypass_security_component.html",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}
