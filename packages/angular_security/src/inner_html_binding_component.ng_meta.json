@@ -29,7 +29,7 @@
       "type": {
         "class": "Type",
         "name": "InnerHtmlBindingComponent",
-        "moduleUrl": "asset:angular_security/lib/inner_html_binding_component.dart",
+        "moduleUrl": "asset:angular_security/lib/src/inner_html_binding_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -46,7 +46,7 @@
       "template": {
         "encapsulation": 2,
         "template": "<h3>Binding innerHTML</h3>\n<p>Bound value:</p>\n<p class=\"e2e-inner-html-interpolated\">{{htmlSnippet}}</p>\n<p>Result of binding to innerHTML:</p>\n<p class=\"e2e-inner-html-bound\" [innerHTML]=\"htmlSnippet\"></p>\n",
-        "templateUrl": "asset:angular_security/lib/inner_html_binding_component.html",
+        "templateUrl": "asset:angular_security/lib/src/inner_html_binding_component.html",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []

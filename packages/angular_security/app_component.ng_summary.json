@@ -7,11 +7,11 @@
         "5": false
       },
       {
-        "1": "bypass_security_component.dart",
+        "1": "src/bypass_security_component.dart",
         "5": false
       },
       {
-        "1": "inner_html_binding_component.dart",
+        "1": "src/inner_html_binding_component.dart",
         "5": false
       }
     ],
@@ -55,7 +55,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "      <h1>Security</h1>\n      <inner-html-binding></inner-html-binding>\n      <bypass-security></bypass-security>\n    ",
+        "template": "    <h1>Security</h1>\n    <inner-html-binding></inner-html-binding>\n    <bypass-security></bypass-security>\n  ",
         "templateUrl": "asset:angular_security/lib/app_component.dart",
         "styles": [],
         "styleUrls": [],

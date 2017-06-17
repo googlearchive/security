@@ -22,17 +22,7 @@
         ]
       }
     ],
-    "6": "bypass_security_component.dart",
-    "7": [
-      {
-        "1": "package:angular2/angular2.template.dart",
-        "4": "i0"
-      },
-      {
-        "1": "package:angular2/security.template.dart",
-        "4": "i1"
-      }
-    ]
+    "6": "bypass_security_component.dart"
   },
   "type": {
     "BypassSecurityComponent": {
@@ -43,7 +33,7 @@
       "type": {
         "class": "Type",
         "name": "BypassSecurityComponent",
-        "moduleUrl": "asset:angular_security/lib/bypass_security_component.dart",
+        "moduleUrl": "asset:angular_security/lib/src/bypass_security_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -54,7 +44,7 @@
               "identifier": {
                 "class": "Identifier",
                 "name": "DomSanitizationService",
-                "moduleUrl": "asset:angular2/lib/src/security/dom_sanitization_service.dart",
+                "moduleUrl": null,
                 "prefix": null,
                 "value": null
               },
@@ -81,7 +71,7 @@
       "template": {
         "encapsulation": 2,
         "template": "<h3>Bypass Security Component</h3>\n\n<h4>A untrusted URL:</h4>\n<p><a class=\"e2e-dangerous-url\" [href]=\"dangerousUrl\">Click me</a></p>\n<h4>A trusted URL:</h4>\n<p><a class=\"e2e-trusted-url\" [href]=\"trustedUrl\">Click me</a></p>\n\n<h4>Resource URL:</h4>\n<p>Showing: {{dangerousVideoUrl}}</p>\n<p>Trusted:</p>\n<iframe class=\"e2e-iframe-trusted-src\" width=\"640\" height=\"390\" [src]=\"videoUrl\"></iframe>\n<p>Untrusted:</p>\n<iframe class=\"e2e-iframe-untrusted-src\" width=\"640\" height=\"390\" [src]=\"dangerousVideoUrl\"></iframe>\n",
-        "templateUrl": "asset:angular_security/lib/bypass_security_component.html",
+        "templateUrl": "asset:angular_security/lib/src/bypass_security_component.html",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []
