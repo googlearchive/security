@@ -36,11 +36,11 @@ class ViewBypassSecurityComponent0 extends AppView<import1.BypassSecurityCompone
   import2.AnchorElement _el_10;
   import2.Element _el_12;
   import2.Element _el_14;
-  import2.Text _text_15;
-  import2.Element _el_16;
-  import2.IFrameElement _el_18;
-  import2.Element _el_19;
-  import2.IFrameElement _el_21;
+  import2.Text _text_16;
+  import2.Element _el_17;
+  import2.IFrameElement _el_19;
+  import2.Element _el_20;
+  import2.IFrameElement _el_22;
   var _expr_0;
   var _expr_1;
   var _expr_2;
@@ -79,22 +79,24 @@ class ViewBypassSecurityComponent0 extends AppView<import1.BypassSecurityCompone
     import2.Text _text_13 = new import2.Text('Resource URL:');
     _el_12.append(_text_13);
     _el_14 = createAndAppend(doc, 'p', parentRenderNode);
-    _text_15 = new import2.Text('');
+    import2.Text _text_15 = new import2.Text('Showing: ');
     _el_14.append(_text_15);
-    _el_16 = createAndAppend(doc, 'p', parentRenderNode);
-    import2.Text _text_17 = new import2.Text('Trusted:');
-    _el_16.append(_text_17);
-    _el_18 = createAndAppend(doc, 'iframe', parentRenderNode);
-    _el_18.className = 'e2e-iframe-trusted-src';
-    createAttr(_el_18, 'height', '390');
-    createAttr(_el_18, 'width', '640');
-    _el_19 = createAndAppend(doc, 'p', parentRenderNode);
-    import2.Text _text_20 = new import2.Text('Untrusted:');
-    _el_19.append(_text_20);
-    _el_21 = createAndAppend(doc, 'iframe', parentRenderNode);
-    _el_21.className = 'e2e-iframe-untrusted-src';
-    createAttr(_el_21, 'height', '390');
-    createAttr(_el_21, 'width', '640');
+    _text_16 = new import2.Text('');
+    _el_14.append(_text_16);
+    _el_17 = createAndAppend(doc, 'p', parentRenderNode);
+    import2.Text _text_18 = new import2.Text('Trusted:');
+    _el_17.append(_text_18);
+    _el_19 = createAndAppend(doc, 'iframe', parentRenderNode);
+    _el_19.className = 'e2e-iframe-trusted-src';
+    createAttr(_el_19, 'height', '390');
+    createAttr(_el_19, 'width', '640');
+    _el_20 = createAndAppend(doc, 'p', parentRenderNode);
+    import2.Text _text_21 = new import2.Text('Untrusted:');
+    _el_20.append(_text_21);
+    _el_22 = createAndAppend(doc, 'iframe', parentRenderNode);
+    _el_22.className = 'e2e-iframe-untrusted-src';
+    createAttr(_el_22, 'height', '390');
+    createAttr(_el_22, 'width', '640');
     init(const [], null);
     return null;
   }
@@ -112,19 +114,19 @@ class ViewBypassSecurityComponent0 extends AppView<import1.BypassSecurityCompone
       setProp(_el_10, 'href', import6.appViewUtils.sanitizer.sanitizeUrl(currVal_1));
       _expr_1 = currVal_1;
     }
-    final currVal_2 = import6.interpolate1('Showing: ', _ctx.dangerousVideoUrl, '');
+    final currVal_2 = (_ctx.dangerousVideoUrl ?? '');
     if (!identical(_expr_2, currVal_2)) {
-      _text_15.text = currVal_2;
+      _text_16.text = currVal_2;
       _expr_2 = currVal_2;
     }
     final currVal_3 = _ctx.videoUrl;
     if (!identical(_expr_3, currVal_3)) {
-      setProp(_el_18, 'src', import6.appViewUtils.sanitizer.sanitizeResourceUrl(currVal_3));
+      setProp(_el_19, 'src', import6.appViewUtils.sanitizer.sanitizeResourceUrl(currVal_3));
       _expr_3 = currVal_3;
     }
     final currVal_4 = _ctx.dangerousVideoUrl;
     if (!identical(_expr_4, currVal_4)) {
-      setProp(_el_21, 'src', import6.appViewUtils.sanitizer.sanitizeResourceUrl(currVal_4));
+      setProp(_el_22, 'src', import6.appViewUtils.sanitizer.sanitizeResourceUrl(currVal_4));
       _expr_4 = currVal_4;
     }
   }
