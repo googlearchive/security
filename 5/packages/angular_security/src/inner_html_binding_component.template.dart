@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -31,14 +29,15 @@ class ViewInnerHtmlBindingComponent0 extends AppView<import1.InnerHtmlBindingCom
   var _expr_0;
   var _expr_1;
   static RenderComponentType _renderType;
-  ViewInnerHtmlBindingComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewInnerHtmlBindingComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('inner-html-binding');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$InnerHtmlBindingComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.InnerHtmlBindingComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'h3', parentRenderNode);
     import2.Text _text_1 = new import2.Text('Binding innerHTML');
@@ -75,7 +74,7 @@ class ViewInnerHtmlBindingComponent0 extends AppView<import1.InnerHtmlBindingCom
   }
 }
 
-AppView<import1.InnerHtmlBindingComponent> viewFactory_InnerHtmlBindingComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.InnerHtmlBindingComponent> viewFactory_InnerHtmlBindingComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewInnerHtmlBindingComponent0(parentView, parentIndex);
 }
 
@@ -83,24 +82,16 @@ const List<dynamic> styles$InnerHtmlBindingComponentHost = const [];
 
 class _ViewInnerHtmlBindingComponentHost0 extends AppView<dynamic> {
   ViewInnerHtmlBindingComponent0 _compView_0;
-  import1.InnerHtmlBindingComponent _InnerHtmlBindingComponent_0_4;
-  _ViewInnerHtmlBindingComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import1.InnerHtmlBindingComponent _InnerHtmlBindingComponent_0_5;
+  _ViewInnerHtmlBindingComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewInnerHtmlBindingComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _InnerHtmlBindingComponent_0_4 = new import1.InnerHtmlBindingComponent();
-    _compView_0.create(_InnerHtmlBindingComponent_0_4, projectableNodes);
+    _InnerHtmlBindingComponent_0_5 = new import1.InnerHtmlBindingComponent();
+    _compView_0.create(_InnerHtmlBindingComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.InnerHtmlBindingComponent>(0, this, rootEl, _InnerHtmlBindingComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.InnerHtmlBindingComponent) && (0 == nodeIndex))) {
-      return _InnerHtmlBindingComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.InnerHtmlBindingComponent>(0, this, rootEl, _InnerHtmlBindingComponent_0_5);
   }
 
   @override
@@ -114,7 +105,7 @@ class _ViewInnerHtmlBindingComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_InnerHtmlBindingComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_InnerHtmlBindingComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewInnerHtmlBindingComponentHost0(parentView, parentIndex);
 }
 

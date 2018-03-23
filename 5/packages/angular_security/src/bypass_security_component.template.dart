@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -45,14 +43,15 @@ class ViewBypassSecurityComponent0 extends AppView<import1.BypassSecurityCompone
   var _expr_3;
   var _expr_4;
   static RenderComponentType _renderType;
-  ViewBypassSecurityComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewBypassSecurityComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('bypass-security');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$BypassSecurityComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.BypassSecurityComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'h3', parentRenderNode);
     import2.Text _text_1 = new import2.Text('Bypass Security Component');
@@ -130,7 +129,7 @@ class ViewBypassSecurityComponent0 extends AppView<import1.BypassSecurityCompone
   }
 }
 
-AppView<import1.BypassSecurityComponent> viewFactory_BypassSecurityComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.BypassSecurityComponent> viewFactory_BypassSecurityComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewBypassSecurityComponent0(parentView, parentIndex);
 }
 
@@ -138,24 +137,16 @@ const List<dynamic> styles$BypassSecurityComponentHost = const [];
 
 class _ViewBypassSecurityComponentHost0 extends AppView<dynamic> {
   ViewBypassSecurityComponent0 _compView_0;
-  import1.BypassSecurityComponent _BypassSecurityComponent_0_4;
-  _ViewBypassSecurityComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import1.BypassSecurityComponent _BypassSecurityComponent_0_5;
+  _ViewBypassSecurityComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewBypassSecurityComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _BypassSecurityComponent_0_4 = new import1.BypassSecurityComponent(this.injectorGet(import8.DomSanitizationService, viewData.parentIndex));
-    _compView_0.create(_BypassSecurityComponent_0_4, projectableNodes);
+    _BypassSecurityComponent_0_5 = new import1.BypassSecurityComponent(this.injectorGet(import8.DomSanitizationService, viewData.parentIndex));
+    _compView_0.create(_BypassSecurityComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.BypassSecurityComponent>(0, this, rootEl, _BypassSecurityComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.BypassSecurityComponent) && (0 == nodeIndex))) {
-      return _BypassSecurityComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.BypassSecurityComponent>(0, this, rootEl, _BypassSecurityComponent_0_5);
   }
 
   @override
@@ -169,7 +160,7 @@ class _ViewBypassSecurityComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_BypassSecurityComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_BypassSecurityComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewBypassSecurityComponentHost0(parentView, parentIndex);
 }
 

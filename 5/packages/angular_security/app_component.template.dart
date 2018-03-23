@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -34,19 +32,20 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
   import2.Element _el_0;
   import2.Element _el_2;
   import3.ViewInnerHtmlBindingComponent0 _compView_2;
-  import4.InnerHtmlBindingComponent _InnerHtmlBindingComponent_2_4;
+  import4.InnerHtmlBindingComponent _InnerHtmlBindingComponent_2_5;
   import2.Element _el_3;
   import5.ViewBypassSecurityComponent0 _compView_3;
-  import6.BypassSecurityComponent _BypassSecurityComponent_3_4;
+  import6.BypassSecurityComponent _BypassSecurityComponent_3_5;
   static RenderComponentType _renderType;
-  ViewAppComponent0(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewAppComponent0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-app');
     _renderType ??= import10.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$AppComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.AppComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'h1', parentRenderNode);
     import2.Text _text_1 = new import2.Text('Security');
@@ -54,26 +53,15 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _compView_2 = new import3.ViewInnerHtmlBindingComponent0(this, 2);
     _el_2 = _compView_2.rootEl;
     parentRenderNode.append(_el_2);
-    _InnerHtmlBindingComponent_2_4 = new import4.InnerHtmlBindingComponent();
-    _compView_2.create(_InnerHtmlBindingComponent_2_4, []);
+    _InnerHtmlBindingComponent_2_5 = new import4.InnerHtmlBindingComponent();
+    _compView_2.create(_InnerHtmlBindingComponent_2_5, []);
     _compView_3 = new import5.ViewBypassSecurityComponent0(this, 3);
     _el_3 = _compView_3.rootEl;
     parentRenderNode.append(_el_3);
-    _BypassSecurityComponent_3_4 = new import6.BypassSecurityComponent(parentView.injectorGet(import12.DomSanitizationService, viewData.parentIndex));
-    _compView_3.create(_BypassSecurityComponent_3_4, []);
+    _BypassSecurityComponent_3_5 = new import6.BypassSecurityComponent(parentView.injectorGet(import12.DomSanitizationService, viewData.parentIndex));
+    _compView_3.create(_BypassSecurityComponent_3_5, []);
     init(const [], null);
     return null;
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import4.InnerHtmlBindingComponent) && (2 == nodeIndex))) {
-      return _InnerHtmlBindingComponent_2_4;
-    }
-    if ((identical(token, import6.BypassSecurityComponent) && (3 == nodeIndex))) {
-      return _BypassSecurityComponent_3_4;
-    }
-    return notFoundResult;
   }
 
   @override
@@ -89,7 +77,7 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
   }
 }
 
-AppView<import1.AppComponent> viewFactory_AppComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.AppComponent> viewFactory_AppComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewAppComponent0(parentView, parentIndex);
 }
 
@@ -97,24 +85,16 @@ const List<dynamic> styles$AppComponentHost = const [];
 
 class _ViewAppComponentHost0 extends AppView<dynamic> {
   ViewAppComponent0 _compView_0;
-  import1.AppComponent _AppComponent_0_4;
-  _ViewAppComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import1.AppComponent _AppComponent_0_5;
+  _ViewAppComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewAppComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _AppComponent_0_4 = new import1.AppComponent();
-    _compView_0.create(_AppComponent_0_4, projectableNodes);
+    _AppComponent_0_5 = new import1.AppComponent();
+    _compView_0.create(_AppComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.AppComponent>(0, this, rootEl, _AppComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.AppComponent) && (0 == nodeIndex))) {
-      return _AppComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.AppComponent>(0, this, rootEl, _AppComponent_0_5);
   }
 
   @override
@@ -128,7 +108,7 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_AppComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_AppComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponentHost0(parentView, parentIndex);
 }
 
