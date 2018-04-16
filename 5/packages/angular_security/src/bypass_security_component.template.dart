@@ -43,7 +43,7 @@ class ViewBypassSecurityComponent0 extends AppView<import1.BypassSecurityCompone
   var _expr_3;
   var _expr_4;
   static RenderComponentType _renderType;
-  ViewBypassSecurityComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewBypassSecurityComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('bypass-security');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$BypassSecurityComponent);
     setupComponentType(_renderType);
@@ -138,7 +138,7 @@ const List<dynamic> styles$BypassSecurityComponentHost = const [];
 class _ViewBypassSecurityComponentHost0 extends AppView<dynamic> {
   ViewBypassSecurityComponent0 _compView_0;
   import1.BypassSecurityComponent _BypassSecurityComponent_0_5;
-  _ViewBypassSecurityComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewBypassSecurityComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewBypassSecurityComponent0(this, 0);

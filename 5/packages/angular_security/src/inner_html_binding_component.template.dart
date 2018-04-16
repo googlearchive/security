@@ -29,7 +29,7 @@ class ViewInnerHtmlBindingComponent0 extends AppView<import1.InnerHtmlBindingCom
   var _expr_0;
   var _expr_1;
   static RenderComponentType _renderType;
-  ViewInnerHtmlBindingComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewInnerHtmlBindingComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('inner-html-binding');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$InnerHtmlBindingComponent);
     setupComponentType(_renderType);
@@ -83,7 +83,7 @@ const List<dynamic> styles$InnerHtmlBindingComponentHost = const [];
 class _ViewInnerHtmlBindingComponentHost0 extends AppView<dynamic> {
   ViewInnerHtmlBindingComponent0 _compView_0;
   import1.InnerHtmlBindingComponent _InnerHtmlBindingComponent_0_5;
-  _ViewInnerHtmlBindingComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewInnerHtmlBindingComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewInnerHtmlBindingComponent0(this, 0);
